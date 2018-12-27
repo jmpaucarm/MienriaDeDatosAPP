@@ -1,1 +1,1 @@
-# MienriaDeDatosAPP
+# Minería De Datos APP
