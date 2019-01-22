@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ec.edu.uce.vista.RegistroVehiculos">
+    <ScrollView
+        android:layout_width="249dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:text="REGISTRO DE VEHICULO"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/placaRV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Placa"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/marcaRV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Marca"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/fechaFabricacionRV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:gravity="center_horizontal"
+                android:text="Fecha Fabricación"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/costoRV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Costo"
+                android:inputType="numberDecimal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="10dp"
+                    android:text="Matriculado"
+                    android:textSize="18sp" />
+
+                <Switch
+                    android:id="@+id/matriculadoRV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="30dp"
+                    android:layout_marginVertical="7dp" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/colorRV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Color"
+                android:inputType="textPersonName"
+                android:textSize="18sp" />
+            
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:src="@drawable/img_base"
+                android:id="@+id/imagenRV"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnImageRV"
+                android:layout_gravity="center"
+                android:onClick="btnTomarFotoRV"
+                android:text="Selecciona Imagen"/>
+
+            <EditText
+                android:id="@+id/tipoRV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tipo"
+                android:inputType="textPersonName"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/confirmarVehiculoButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="20dp"
+                android:onClick="btnConfirmarRegistroV"
+                android:text="CONFIRMAR REGISTRO" />
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<item
+        android:id="@+id/insertarVMenu"
+        android:title="Insertar"
+        app:showAsAction="never">
+    </item>
+
+    <item
+        android:id="@+id/operacionesVMenu"
+        android:title="Operaciones"
+        app:showAsAction="never">
+    </item>
+
+    <item
+        android:id="@+id/settings"
+        android:title="Settings"
+        app:showAsAction="never">
+    </item>
+
+    <item
+        android:id="@+id/persistir"
+        android:title="Persistir"
+        app:showAsAction="never">
+    </item>
+
+    <item
+        android:id="@+id/salirAppMenu"
+        android:title="Salir de la aplicación"
+        app:showAsAction="never">
+    </item>
+</menu>
