@@ -166,11 +166,13 @@ public class ReservaVehiculos extends AppCompatActivity {
                     int tiempoPrestamo = restarFechas(simpleDate.parse(fecha2.getText().toString()), simpleDate.parse(fecha1.getText().toString()));
                     if (tiempoPrestamo>7){
                         double val = (tiempoPrestamo * VALOR_DIA)+ (0.10*VALOR_DIA);
+						valorReserva.setText(String.valueOf(val));
                     }else{
                         double val = tiempoPrestamo * VALOR_DIA;
+						valorReserva.setText(String.valueOf(val));
                     }
-                    double val = restarFechas(simpleDate.parse(fecha2.getText().toString()), simpleDate.parse(fecha1.getText().toString())) * VALOR_DIA;
-                    valorReserva.setText(String.valueOf(val));
+                    //double val = restarFechas(simpleDate.parse(fecha2.getText().toString()), simpleDate.parse(fecha1.getText().toString())) * VALOR_DIA;
+                    //valorReserva.setText(String.valueOf(val));
                 } catch (Exception e) {
                     valorReserva.setText(String.valueOf(0));
                     Log.e("Error de fechas ", e.toString());
