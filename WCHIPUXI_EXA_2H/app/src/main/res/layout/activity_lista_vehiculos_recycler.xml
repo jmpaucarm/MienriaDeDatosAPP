@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingEnd="16dp"
+    tools:context="ec.edu.uce.vista.ListaVehiculosRecycler">
+
+    <TextView
+        android:id="@+id/tituloMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="LISTA VEHICULOS"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerVehiculos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+    </android.support.v7.widget.RecyclerView>
+
+
+
+</LinearLayout>
+
